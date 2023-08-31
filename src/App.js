@@ -25,8 +25,8 @@ const [ user, setUser] = useState(getUser());
       <>
       <NavBar user={user}  setUser={setUser} />
       <Routes>
-         <Route path="/orders/new" element={<NewOrderPage />} />
-         <Route path="/orders" element={<OrderHistoryPage />} />         
+         <Route path="/orders/new" element={<NewOrderPage setUser={setUser}  user={user}  />} />
+         <Route path="/orders" element={<OrderHistoryPage setUser={setUser} user={user} />} />         
          {/* <Route path="/auth" element={<AuthPage />} />          */}
       </Routes>
       </>

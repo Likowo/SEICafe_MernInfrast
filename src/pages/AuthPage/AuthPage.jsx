@@ -2,11 +2,12 @@ import React from 'react'
 import SignUpForm from '../../component/SignUpForm/SignUpForm';
 import LogInForm from '../../component/LogInForm/LogInForm';
 import { useState } from 'react';
+import styles from './AuthPage.module.css';
 
 const AuthPage = ({setUser}) => {
   const [showLogin, setShowLogin] = useState(true);
   return (
-    <main>
+    <main  className={styles.AuthPage}>
       <div>
         <h1>Auth Page</h1>
         <button

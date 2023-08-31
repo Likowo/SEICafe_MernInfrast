@@ -19,5 +19,3 @@ module.exports = router;
 
 
 
-////////////////////////////////
-// GET /api/users/check-token

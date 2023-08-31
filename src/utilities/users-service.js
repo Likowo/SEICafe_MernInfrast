@@ -45,8 +45,8 @@ export async function signUp(userData) {
         localStorage.removeItem('token');
         }
 
-      export async function logIn(credentials) {  //we need async to communicate with our backend 
-        const token = await usersAPI.logIn(credentials)
+      export async function login(credentials) {  //we need async to communicate with our backend 
+        const token = await usersAPI.login(credentials)
 
         // Persist the token ///setter function, getter function
         localStorage.setItem("token", token); 
@@ -54,7 +54,4 @@ export async function signUp(userData) {
         return getUser()
         }
      
-        export async function checkToken(){
-          alert('clicked');
-          return usersAPI.checkToken().then((dateStr) => new Date(dateStr));
-        }
+      
